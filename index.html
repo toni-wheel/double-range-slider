@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="/css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Двойной ползунок (плагин NoUiSlider)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="silder">
+          <div class="flex flex--column">
+            <h1 class="slider__title">Двойной ползунок (плагин NoUiSlider)</h1>
+            <p class="slider__subtitle">
+              Используйте ползунок или вводите диапазон значений в поле
+            </p>
+          </div>
+          <div class="flex flex--h-center flex--v-center">
+            <input
+              type="text"
+              name="min_num"
+              id="min_num"
+              class="slider__field"
+              placeholder="от"
+            />
+            <span class="slider__separator">—</span>
+            <input
+              type="text"
+              name="max_num"
+              id="max_num"
+              class="slider__field"
+              placeholder="до"
+            />
+          </div>
+          <div class="box box--center">
+            <div class="slider__self" id="slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
